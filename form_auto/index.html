@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Appointment Request Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body >
+
+<div style="float:left;width:100%;">
+  <img src="https://cee.mit.edu/wp-content/uploads/2017/05/CEE_Gray_Horizontal_Logo-01_white.jpg" width="550px" height="200px">
+</div>
+
+
+<div class="container">
+<h1>Graduate Student Appointment Request Form</h1> 
+
+
+
+<h2> Appointment Type: </h2>
+<h6 id="err_appointment"> *Error </h6>
+<form>
+    <label class="radio-inline">
+      <input type="radio" id="RA" value="" name="appointment">Reaseach Assistant 
+    </label>
+    <label class="radio-inline">
+      <input type="radio"  id="fellowship" value="" name="appointment">Fellowship
+    </label>
+    
+  </form>
+
+<h2>Term:</h2>
+<h6 id="err_term"> *Error </h6>
+
+<form>
+    <label class="radio-inline">
+      <input id="fall" type="radio" value="" name="term">Fall(Sept.1 - Jan. 15)
+    </label>
+    <label class="radio-inline">
+      <input id="spring" type="radio" value="" name="term">Spring(Jan. 16 - May 31)
+    </label>
+    <label class="radio-inline">
+      <input id="summer" type="radio" value="" name="term">Summer(June 1 - Aug 31)
+    </label>
+    
+    <label class="radio-inline">
+      <input id="first" type="radio" value="" name="term"><b> First Term</b>
+    </label>
+</form>
+
+<p></p>
+<h6 id="err_info"> *Error  </h6>
+
+<label > Name:    &nbsp</label><input id="name" type='text' >
+
+<label > Student ID #: &nbsp</label><input id="student_id" type='text' >
+
+<h2>Student Pay Rate:</h2>
+
+<h6 id="err_rate"> *Error </h6>
+
+<form id="pay_rate">
+    <label class="radio-inline">
+      <input id="masters" class="regular_pay" type="radio" name="pay_rate" value=""><b>Masters </b>($2,827/month)
+    </label>
+    <label class="radio-inline">
+      <input id="phd" class="regular_pay" type="radio" name="pay_rate" value=""><b>PhD </b>($3,094/month)
+    </label>
+    <label class="radio-inline">
+      <input id="non_stand" type="radio" name="pay_rate" value=""><b>Non-Standard Rate </b> 
+    </label>
+
+    <div style="display:none;" id="custom_rate">
+      <br /><label > Non-Standard pay rate: </label>
+      <input id="custom_pay" type='text' class='form-control'>  
+    </div>
+
+</form>
+
+<h2>Level of Effort:</h2>
+
+<h6 id="err_effort"> *Error </h6>
+
+
+<label > Specify level of effort as a precentage: &nbsp </label><input id="effort" type='text' >
+
+
+
+
+<h2>Appointment Distribution</h2>
+  <p>Please indicate the cost objects to be used for this appointment and the precentage of the appointment to be allocated to each cost object. If one of the cost objects expires before the end of the term, please include a back-up cost object to be used for the remained of the term.</p>            
+
+  <h6 id="err_dist"> *Error </h6>
+
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Cost Objects</th>
+        <th>Cost Object Expiration Date</th>
+        <th>% of Appointment to be Allocated to this Cost Object</th>
+        <th>Appointment Start Date</th>
+        <th>Appointment End Date</th>
+      </tr>
+    </thead>
+    <tbody id="table_body">
+    <form>
+      <tr>
+        <td><input class="dist_form" type='text'></td>
+        <td><input id="exp" class="dist_form" type='text'></td>
+        <td><input id="cost_precent" type='text' class='dist_form'>  </td>
+        <td><input class="dist_form" type='text'></td>
+        <td><input class="dist_form" type='text'></td>
+      </tr>
+    </form>
+    </tbody>
+  </table>
+  <div id="table_btns">
+    <div id="add_row">
+      <button type="button" class="btn btn-success ">+</button>
+    </div>
+
+    <div id="delete_row">
+      <button type="button" class="btn btn-danger "> --</button>
+    </div> 
+  </div>
+
+  <h2>Other Details</h2>
+  <h6 id="err_other"> *Error </h6>
+
+  <div id="other" style="width:40%;">
+    <label > Student's Home Department: </label><input type='text' class="form-control">  
+    <label > Student's Reseach Supervisor: </label><input type='text' class="form-control">  
+    <label > Who should receive a copy of this appointment: </label><input type='text' class="form-control">  
+    <label > Student's Reseach Supervisor: </label> <textarea class="form-control" rows="5"></textarea>
+
+  </div>
+
+
+  <div id="fellow_dets"> 
+
+    <div style="text-align:center;"> <h2>Fellowship Details </h2> </div>
+
+    <h6 id="err_fellow"> *Error </h6>
+
+    
+    <h3>Type of Fellowship:</h3>
+    <label class="radio-inline">
+    <b> Institute(OGE, Presidential)</b>
+      <input type="radio" value="" name="type">
+    </label>
+    <label class="radio-inline">
+    <b> Departmental(Berger, Thurber, etc.)</b>
+      <input type="radio" value="" name="type">
+    </label>
+    <label class="radio-inline">
+    <b> External(Fullbright, NSF, etc.)</b>
+      <input type="radio" value="" name="type">
+    </label>
+
+    <h3>Name of Fellowship:</h3>
+    <input type='text' class="form-control" />
+
+
+    <h3>Additional Fellowship Information</h3>
+
+    <textarea class="form-control" rows="5"></textarea>
+
+
+
+  </div>
+
+  <div id="submit">
+      <button type="button" class="btn btn-primary btn-lg">Done</button>
+    </div>
+
+
+
+</div>
+
+</body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    console.log("Ready to go")
+
+
+  var toggled = false;
+    
+    $("#non_stand").click(function(){
+      if(!toggled){
+        $("#custom_rate").show();
+        toggled = true
+      }
+  
+    });
+    
+
+  $(".regular_pay").click(function(){
+    $("#custom_rate").hide();
+    toggled = false
+  });
+
+  $("input").click(function(){
+
+    fellowship = $("#fellowship").prop('checked');
+
+    if(fellowship)
+      $("#fellow_dets").show();
+    else
+      $("#fellow_dets").hide();
+  });
+
+
+  let curr_rows = 0;
+  $("#add_row").click(function(){
+      if(curr_rows => 1){
+        $("#delete_row").show();  
+      }
+      else if(curr_rows > 5)
+        return ;
+      
+      curr_rows++;
+      var html = "<tr id='" + curr_rows + "_row" + "'>";
+      html += `
+      
+        <td><input class="dist_form" type='text'></td>
+        <td><input id="exp" class="dist_form" type='text'></td>
+        <td><input id ="cost_precent" type='text' class='dist_form'>  </td>
+        <td><input class="dist_form" type='text'></td>
+        <td><input class="dist_form" type='text'></td>
+      </tr>
+    `;
+    $("#table_body").append(html);
+    
+  });
+
+  $("#delete_row").click(function(){
+
+    $("#" + curr_rows + "_row").remove(); 
+    curr_rows -= 1;
+    if(curr_rows < 1){
+        $("#delete_row").hide();  
+    } 
+
+    
+
+  });
+
+
+//for detecting validity of object date 
+  $("body"  ).click(function(){
+    //call a function that would 
+    verify();
+  });
+
+  })
+</script>
+</html>
