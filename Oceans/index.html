@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cyclez</title>
+  <title>Milans Oceans</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,13 +11,18 @@
 
 </head>
 <body>
-<body>
-  <div id="universe">
+  <div class="container">
+  <h1 style="color:#fff;"> Welcome to Milans Oceans </h1>
+  <h3 style="color:#fff;"> A visual demonstration of the Milankovitch cycles </h3>
+  </div>
+
+  <div style="padding-top:120px;" id="universe">
     <div id="galaxy">
       <div id="sun">
       </div>
       <div id="mercury" class="orbit">
-        <div id="axis" class="planet"> <div class="planet"></div> </div>
+        <div class="planet"> <div class="" id="axis"> . </div> </div>
+        
       </div>      
     </div>
   </div>
@@ -88,6 +93,18 @@
   </div>
 
 </div>
+
+<div class="container footer" >
+  <footer> 
+    <ul>
+      <li> <a href="https://github.com/armins88/Milan_Ocean"> Made with ❤ by Armin </a> </li> 
+
+
+    </ul>
+  </footer>
+</div>
+
+
 </body>
 
   <script type="text/javascript">
@@ -108,9 +125,6 @@
 
       function update(){
 
-
-
-        //console.log(String(time) + '%');
         //change time if need be
           if( time == 100)
             time = 0
@@ -129,15 +143,20 @@
           }
 
           let alpha = time / 100 ;
-          
+          /*
           if(time == 25 )
             $("#axis").css({"transform":"rotate(23deg)"});
           else if (time  ==  50)
              $("#axis").css({"transform":"rotate(35deg)"});
           else if(time == 75)
             $("#axis").css({"transform":"rotate(10deg)"});
-
-
+          */
+          /*
+          if(time > 40 && time < 50){
+            console.log("sure");
+            $("#axis").css({"top":"-150px"});
+          }
+          */
 
 
           if(time > 50)
@@ -147,7 +166,7 @@
           if(time == 0)
             $("#mercury.orbit").css({"width":"14em","height":"14em"});  
 
-          console.log(alpha ,time, $("#mercury.orbit").css("width"));
+          //console.log(alpha ,time, $("#mercury.orbit").css("width"));
           progressBar.css({'width': String(time) + '%'});
           $("#mercury.orbit").css({"width":"+=" + "10px"});
 
@@ -161,3 +180,4 @@
 
   </script>
 </html>
+
