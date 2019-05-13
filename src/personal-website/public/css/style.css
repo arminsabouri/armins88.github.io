@@ -236,6 +236,20 @@ input {
     width: 350px;
 }
 
+@media screen and (max-width: 992px) {
+    .propic {
+     width: 220px;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .propic {
+        width: 150px;
+        padding-right: 10px;
+    }
+  }
+
 .header-btns-light a{
     font-size: 28px;
     padding: 12px;
