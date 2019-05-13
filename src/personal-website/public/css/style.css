@@ -160,7 +160,7 @@ input {
 /* HEADER SECTION */
 #h {
 	/*background: url(../img/header.jpg) no-repeat center top;*/
-	padding-top: 10px;
+	padding-top: 30px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -178,12 +178,21 @@ input {
     background-size: cover;
 }
 
+.h-light{
+    color: black;
+    background-color: white;
+}
+
+.h-dark{
+    color: white;
+    background-color: #2C001E;
+}
+
 .header-btn a:hover{
 	color: white;
 }
 
-
-.site-btn {
+.site-btn-light {
     display: inline-block;
     text-transform: uppercase;
     font-size: 12px;
@@ -198,6 +207,21 @@ input {
     color: #40424a;
     font-weight: 700;
 }
+.site-btn-dark {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    min-width: 213px;
+    min-height: 20px;
+    text-align: center;
+    padding: 20px 10px 15px;
+    position: relative;
+    background-color: #fff;
+    margin-right: 10px;
+    border: 2px solid white;
+    color: #40424a;
+    font-weight: 700;
+}
 .btn-white {
 	background: white;
 	color: #2f2f2f;
@@ -207,7 +231,6 @@ input {
 	background: #2f2f2f;
 	color: white;
 }
-
 
 .propic{
     width: 350px;
@@ -219,15 +242,21 @@ input {
     color: black;
 }
 
+.header-btns-dark a{
+    font-size: 28px;
+    padding: 12px;
+    color: white;
+}
+
+#h h1.dark {
+	color: white;
+}
+
 #h h1.light {
 	color: black;
-	font-weight: 900;
-	font-size: 70px;
-	letter-spacing: 5px;
 }
 
 #h h1 {
-	color: white;
 	font-weight: 900;
 	font-size: 70px;
 	letter-spacing: 5px;
@@ -241,9 +270,14 @@ input {
 #h img {
 	padding-bottom: 0px;
 }
-#h p {
+#h p.light {
 	font-size: 30px;
 	color: black;
+}
+
+#h p.dark {
+	font-size: 30px;
+	color: white;
 }
 
 /* White Section */

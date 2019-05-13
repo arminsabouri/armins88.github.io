@@ -11,12 +11,21 @@ class Home extends React.Component{
     DARK_THEMED = 'dark';
     constructor(){
         super();
+        this.state = {
+            theme: this.LIGHT_THEMED,
+        }
+    }
+
+    toggleTheme = () =>{
+        this.setState({
+            theme: this.state.theme === 'light' ? 'dark' : 'light',
+        })
     }
 
     render(){
         return(
             <React.Fragment>
-                <PageHeader theme={this.LIGHT_THEMED}/>
+                <PageHeader theme={this.state.theme} toggleTheme={this.toggleTheme}/>
             </React.Fragment>
         );
     }
