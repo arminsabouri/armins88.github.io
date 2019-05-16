@@ -4,7 +4,7 @@ import "antd/dist/antd.css";
 import style from '../../../public/css/style.css';
 import PageHeader from '../../components/Header';
 import Contactcard from '../../components/ContactCard';
-
+import Exp from '../../components/Exp';
 
 
 class Home extends React.Component{
@@ -28,6 +28,7 @@ class Home extends React.Component{
             <React.Fragment>
                 <PageHeader theme={this.state.theme} toggleTheme={this.toggleTheme}/>
                 <Contactcard theme={this.state.theme}/>
+                <Exp theme={this.state.theme}/>
             </React.Fragment>
         );
     }
