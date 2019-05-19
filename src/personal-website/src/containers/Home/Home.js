@@ -5,7 +5,7 @@ import style from '../../../public/css/style.css';
 import PageHeader from '../../components/Header';
 import Contactcard from '../../components/ContactCard';
 import Exp from '../../components/Exp';
-
+import Personal from '../../components/Personal';
 
 class Home extends React.Component{
     LIGHT_THEMED = 'light';
@@ -29,6 +29,7 @@ class Home extends React.Component{
                 <PageHeader theme={this.state.theme} toggleTheme={this.toggleTheme}/>
                 <Contactcard theme={this.state.theme}/>
                 <Exp theme={this.state.theme}/>
+                <Personal theme={this.state.theme}/>
             </React.Fragment>
         );
     }

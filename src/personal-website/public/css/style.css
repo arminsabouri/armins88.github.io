@@ -281,6 +281,7 @@ input {
 	font-weight: 900;
 	font-size: 60px;
 	letter-spacing: 5px;
+	text-align: center;
 }
 
 .section-header-dark{
@@ -288,8 +289,36 @@ input {
 	font-weight: 900;
 	font-size: 60px;
 	letter-spacing: 5px;
+	text-align: center;
 }
 
+.subsection-header-light{
+	color: black;
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.subsection-header-dark{
+	color: white;
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.subsection-content-light{
+	color: black;
+	font-size: 30px;
+	text-align: center;
+}
+
+.subsection-content-dark{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
 
 #h h3 {
 	color: white;
@@ -773,18 +802,10 @@ label:hover :checked + .card {
 	color: white;
 }
 
-#jelly p {
-	color: #e9e9e9;
-	font-size: 16px;
+.no-style-list{
+	list-style: none;
 }
 
-#jelly h1 {
-	font-size: 200px;
-}
-
-#jelly h3 {
-	margin-top: 10px;
-}
 
 /* FOOTER */
 #f {
