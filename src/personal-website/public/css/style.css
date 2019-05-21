@@ -371,7 +371,7 @@ input {
 
 .picton-dark{
 	color: black;
-	background-color:  #002C0E;
+	background-color:  #0a1d32;
 }
 
 #picton .col-md-6 {
@@ -657,12 +657,19 @@ input {
 
 /* Blue Section - Curious */
 #curious {
-	background: #3498DB;
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	color: white;
 	text-align: center;
+}
+
+.curious-dark{
+	background-color: #1d6fa5;
+}
+
+.curious-light{
+	background-color: #3498DB;
 }
 
 p.timeline-text-light{
@@ -795,12 +802,22 @@ label:hover :checked + .card {
 
 /* Blue Section - Jelly */
 #jelly {
-	background: #2574A9;
 	width: 100%;
 	padding-top: 0px;
 	padding-bottom: 100px;
 	color: white;
 }
+
+.jelly-dark{
+	background-color:#0b2c41;
+	color: white;
+}
+
+.jelly-light{
+	background-color: #2574A9;
+	color: black;
+}
+
 
 .no-style-list{
 	list-style: none;

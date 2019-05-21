@@ -6,6 +6,7 @@ import PageHeader from '../../components/Header';
 import Contactcard from '../../components/ContactCard';
 import Exp from '../../components/Exp';
 import Personal from '../../components/Personal';
+import Skills from '../../components/Skills';
 
 class Home extends React.Component{
     LIGHT_THEMED = 'light';
@@ -30,6 +31,7 @@ class Home extends React.Component{
                 <Contactcard theme={this.state.theme}/>
                 <Exp theme={this.state.theme}/>
                 <Personal theme={this.state.theme}/>
+                <Skills theme={this.state.theme}/>
             </React.Fragment>
         );
     }

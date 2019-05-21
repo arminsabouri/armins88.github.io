@@ -9,7 +9,7 @@ class Exp extends React.Component{
         const headerStyle = {"font-size":"30px",
             "color": this.props.theme === "light" ? 'black' : 'white'};
         const contentStyle = {"font-size":"20px",
-        "color": this.props.theme === "light" ? 'black' : 'white'};
+        "color": 'white', 'background-color':'#40424a'};
         return(
             <div id="curious" className={"container curious-" +this.props.theme}>
                 <h1 className={"section-header-"+this.props.theme}>Work Experience</h1>
