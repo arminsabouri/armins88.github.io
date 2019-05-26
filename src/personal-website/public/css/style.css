@@ -156,6 +156,13 @@ input {
 	padding-right: 15px;
 }
 
+.down-nav-icon{
+	font-size: 25px;
+	position: fixed;
+	z-index: 9;
+	padding: 10px
+}
+
 
 /* HEADER SECTION */
 #h {

@@ -6,12 +6,12 @@ class Exp extends React.Component{
 
     render(){
         // const dot = <FontAwesomeIcon icon="circle" style={{ fontSize: '30px' }} />
-        const headerStyle = {"font-size":"30px",
+        const headerStyle = {"fontSize":"30px",
             "color": this.props.theme === "light" ? 'black' : 'white'};
-        const subtitleStyle = {"font-size":"25px",
+        const subtitleStyle = {"fontSize":"25px",
             "color": this.props.theme === "light" ? 'black' : 'white'};
-        const contentStyle = {"font-size":"20px",
-        "color": 'white', 'background-color':'#40424a'};
+        const contentStyle = {"fontSize":"20px",
+        "color": 'white', 'backgroundColor':'#40424a'};
         return(
             <div id="curious" className={"container curious-" +this.props.theme}>
                 <h1 className={"section-header-"+this.props.theme}>Work Experience</h1>

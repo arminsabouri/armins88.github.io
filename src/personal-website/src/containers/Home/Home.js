@@ -7,6 +7,8 @@ import Contactcard from '../../components/ContactCard';
 import Exp from '../../components/Exp';
 import Personal from '../../components/Personal';
 import Skills from '../../components/Skills';
+import Navbar from '../../components/Navbar';
+
 
 class Home extends React.Component{
     LIGHT_THEMED = 'light';
@@ -27,6 +29,7 @@ class Home extends React.Component{
     render(){
         return(
             <React.Fragment>
+                <Navbar theme={this.state.theme} />
                 <PageHeader theme={this.state.theme} toggleTheme={this.toggleTheme}/>
                 <Contactcard theme={this.state.theme}/>
                 <Exp theme={this.state.theme}/>
