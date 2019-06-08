@@ -35,7 +35,7 @@ class Exp extends React.Component{
                                             <li>SCSS</li>
                                             <li>Type Script</li>
                                             <li>.NET Web Api</li>
-                                            <li>Entity Framework as a ORM for MySql</li>
+                                            <li>Entity Framework as a ORM for SQL</li>
                                             <li>AWS</li>
                                         </ul>
                         </TimelineEvent>
