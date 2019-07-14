@@ -185,6 +185,11 @@ input {
     background-size: cover;
 }
 
+.header-p{
+	line-height: 1.8;
+	width: 75%;
+}
+
 .h-light{
     color: black;
     background-color: white;
@@ -830,6 +835,10 @@ label:hover :checked + .card {
 
 .no-style-list{
 	list-style: none;
+}
+
+.no-style-list li {
+	padding: 20px;
 }
 
 .personal-projects li{

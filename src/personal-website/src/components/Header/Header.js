@@ -33,8 +33,9 @@ class Header extends React.Component{
                 </Row>  
                 <Row type="flex" justify="center">                
                     <h1 className={this.props.theme}>Armin Sabouri</h1>
-                    <p className={this.props.theme}>
-                        I am recent Computer Science graduate from Boston Univeristy and a full-stack engineer at NormaTec 
+                    <p className={"header-p " +  this.props.theme}>
+                        I am recently graduated Boston based creative and a Full-Stack Engineer at <a href="https://www.normatecrecovery.com/"> NormaTec</a>. <br />
+                        In my professional and educational background, I have worked hard to educated my self to create full stack systems that aim to empower creators and individuals. My interests include resource management in embedded settings, leveraging open source data science frameworks to create an actionable understanding of immense data-sets and peer-to-peer proof of work distributed systems as of recently. I have vast software engineering experience and enjoy teaching my self new concepts and tools. 
                     </p>
                 </Row>
             </div>

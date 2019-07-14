@@ -8,7 +8,7 @@ class ContactCard extends React.Component{
             <div id="picton" className={"container picton-" + this.props.theme}>
                  <Row type="flex" justify="center" align="top">
                      <Col span={6}>
-                        <h1 className={"contact-card-"+this.props.theme}>Boston Ma</h1>
+                        <h1 className={"contact-card-"+this.props.theme}>Boston MA</h1>
                      </Col>
                      <Col span={6}>
                         <h1 className={"contact-card-"+this.props.theme}>+18578912488</h1>
