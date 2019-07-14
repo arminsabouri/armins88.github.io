@@ -1,0 +1,902 @@
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Raleway:900,700,400);
+
+* { 
+	margin: 0;
+	padding: 0px;
+    font-family: 'Raleway', sans-serif;
+} 
+body { 
+	background: #fff; 
+	margin: 0; 
+	color: #5a5a5a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+
+p { 
+	padding: 0; 
+	margin-bottom: 12px; 
+    font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 18px; 
+	line-height: 28px;
+	color: #666; 
+	margin-top: 10px; 
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+.centered {text-align: center}
+.mt {margin-top: 50px;}
+.mb {margin-bottom: 50px;}
+.mtb {margin-top: 50px; margin-bottom: 50px;}
+.mtb2 { margin-top: 100px; margin-bottom: 100px;}
+.ptb {padding-top: 80px; padding-bottom: 80px;}
+
+.clear {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width:100%;
+}
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#696E74;
+}
+
+.nopadding {
+	padding: 0px !important;
+	margin: 0px;
+}
+
+/* Bootstrap Modification */
+
+.navbar-inverse {
+	background: transparent;
+	border: transparent;
+}
+
+img {
+	padding-bottom: 10px;
+}
+
+/* FORM CONFIGURATION */
+
+input {
+	font-size: 16px;
+	min-height: 40px;
+	border-radius: 2px;
+	line-height: 20px;
+	padding: 11px 30px 12px;
+	border: 1px solid #b9b9af;
+	margin-bottom: 10px;
+	background-color: #fff;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.subscribe-input {
+	float: left;
+	width: 65%;
+	text-align: left;
+	margin-right: 2px;
+}
+
+.subscribe-submit {
+	right: 0;
+}
+
+
+.btn-register {
+	margin-top: 15px;
+	border-radius: 50px;
+	margin-right: 10px;
+	top: 0px;
+	float: right;
+	font-size: 16px;
+}
+
+.btn-sub {
+	border-radius: 50px;
+}
+
+/* Overall Buttons*/
+.btn-theme {
+	border-radius: 50px;
+	font-size: 14px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.down-nav-icon{
+	font-size: 25px;
+	position: fixed;
+	z-index: 9;
+	padding: 10px
+}
+
+
+/* HEADER SECTION */
+#h {
+	/*background: url(../img/header.jpg) no-repeat center top;*/
+	padding-top: 30px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 200px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header-p{
+	line-height: 1.8;
+	width: 75%;
+}
+
+.h-light{
+    color: black;
+    background-color: white;
+}
+
+.h-dark{
+    color: white;
+    background-color: #2C001E;
+}
+
+.header-btn a:hover{
+	color: white;
+}
+
+.site-btn-light {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    min-width: 213px;
+    min-height: 20px;
+    text-align: center;
+    padding: 20px 10px 15px;
+    position: relative;
+    background-color: #fff;
+    margin-right: 10px;
+    border: 2px solid #40424a;
+    color: #40424a;
+		font-weight: 700;
+		margin: 20px;
+}
+.site-btn-dark {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    min-width: 213px;
+    min-height: 20px;
+    text-align: center;
+    padding: 20px 10px 15px;
+    position: relative;
+    background-color: #fff;
+    margin-right: 10px;
+    border: 2px solid white;
+    color: #40424a;
+		font-weight: 700;
+		margin: 20px;
+}
+.btn-white {
+	background: white;
+	color: #2f2f2f;
+}
+
+.btn-white:hover {
+	background: #2f2f2f;
+	color: white;
+}
+
+.propic{
+    width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+    .propic {
+     width: 220px;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+	.propic {
+			width: 150px;
+			padding-right: 10px;
+	}
+}
+
+.header-btns-light a{
+    font-size: 28px;
+    padding: 12px;
+    color: black;
+}
+
+.header-btns-dark a{
+    font-size: 28px;
+    padding: 12px;
+    color: white;
+}
+
+#h h1.dark {
+	color: white;
+}
+
+#h h1.light {
+	color: black;
+}
+
+#h h1 {
+	font-weight: 900;
+	font-size: 70px;
+	letter-spacing: 5px;
+}
+
+.section-header-light{
+	color: black;
+	font-weight: 900;
+	font-size: 60px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.section-header-dark{
+	color: white;
+	font-weight: 900;
+	font-size: 60px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.subsection-header-light{
+	color: black;
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.subsection-header-dark{
+	color: white;
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.subsection-content-light{
+	color: black;
+	font-size: 30px;
+	text-align: center;
+}
+
+.subsection-content-dark{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+
+#h h3 {
+	color: white;
+	font-weight: 400;
+}
+
+#h img {
+	padding-bottom: 0px;
+}
+#h p.light {
+	font-size: 30px;
+	color: black;
+}
+
+#h p.dark {
+	font-size: 30px;
+	color: white;
+}
+
+/* White Section */
+#w {
+	background: white;
+	width: 100%;
+	/*padding-top: 100px;*/
+	padding-bottom: 100px;
+}
+
+#w .col-md-6 {
+	padding-right: 0px;
+}
+
+#w p {
+	color: #9f9f9f;
+	font-size: 16px;
+}
+
+
+/* Blue Section - Picton */
+#picton {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.picton-light{
+	color: white;
+	background-color: #2f2f2f;
+}
+
+.picton-dark{
+	color: black;
+	background-color:  #0a1d32;
+}
+
+#picton .col-md-6 {
+	padding-left: 0px;
+}
+
+.contact-card-light{
+	color: #ECECEC;
+	font-weight: 200;
+}
+
+.contact-card-dark{
+	color: white;
+	font-weight: 200;
+}
+
+@media screen and (max-width: 992px) {
+	.contact-card-light{
+		font-size: 20px;
+	}
+	
+	.contact-card-dark{
+		font-size: 20px;
+	}
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+	.contact-card-light{
+		font-size: 20px;
+	}
+	
+	.contact-card-dark{
+		font-size: 20px;
+	}
+}
+
+/*---------------------
+	Hero section
+-----------------------*/
+.hero-section {
+	background: #f2f7f8;
+}
+
+.hero-text {
+	margin-bottom: 80px;
+}
+
+.hero-text h2 {
+	font-size: 170px;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+.hero-text p {
+	font-size: 33px;
+	line-height: 1.3;
+}
+
+.hero-image {
+	padding-top: 70px;
+}
+
+.hero-info h2 {
+	margin-bottom: 30px;
+}
+
+.hero-info ul {
+	list-style: none;
+}
+
+.hero-info ul li {
+	font-size: 24px;
+	color: #808181;
+	margin-bottom: 15px;
+}
+
+.hero-info ul li span {
+	color: #40424a;
+	display: inline-block;
+	min-width: 220px;
+}
+
+.hero-info ul li:last-child {
+	margin-bottom: 0;
+}
+
+.info-section {
+	background: #40424a;
+	padding: 60px 0;
+}
+
+.info-section .hero-info ul li {
+	color: #fff;
+}
+
+.info-section .hero-info ul li span {
+	color: #fff;
+}
+
+
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+
+/* Container around content */
+.container-timeline {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container-timeline::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* The actual content */
+.content-timeline {
+  padding: 46px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  color: black;
+}
+
+.content-timeline p {
+	color: black;
+}
+
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container-timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container-timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+/* Porgess bar */
+.single-progress-item {
+	margin-bottom: 35px;
+	position: relative;
+}
+
+.single-progress-item p {
+	color: black;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.progress-bar-style {
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.bar-inner {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #40424a;
+}
+
+.bar-inner span {
+	position: absolute;
+	right: 0;
+	bottom: -30px;
+	color: #40424a;
+	font-weight: 600;
+}
+
+/* Progress dots */
+.language-progress {
+	max-width: 280px;
+	list-style: none;
+}
+
+.language-progress li {
+	font-size: 24px;
+	position: relative;
+	padding-right: 150px;
+	margin-bottom: 30px;
+}
+
+.language-progress .lan-prog {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.language-progress .lan-prog span {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 18px;
+	border-radius: 12px;
+	background: #40424a;
+}
+
+.language-progress .lan-prog span.fade-ele {
+	background: #cacaca;
+}
+
+/* Blue Section - Curious */
+#curious {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color: white;
+	text-align: center;
+}
+
+.curious-dark{
+	background-color: #1d6fa5;
+}
+
+.curious-light{
+	background-color: #3498DB;
+}
+
+p.timeline-text-light{
+	color: black;
+	font-size: 25px;
+	font-weight: 300;
+}
+
+.timeline-list{
+	padding-left: 50px;
+}
+
+#curious .col-md-6 {
+	padding-right: 0px;
+}
+
+#curious p {
+	
+	font-size: 16px;
+}
+
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 528px;
+    height: 91px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #FFF;
+        text-align: center;
+        line-height: 200px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+    .card .back {
+        background: #222;
+        color: #FFF;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+
+
+/* Icon Box */
+.icon-box {
+	text-align: center;
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.icon-box:last-child {
+	margin-right: 0;
+}
+
+.icon-box i {
+	font-size: 60px;
+}
+
+.icon-box p {
+	color: #40424a;
+}
+
+.social-links a {
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+/* Blue Section - Malibu */
+#malibu {
+	background: #6BB9F0;
+	width: 100%;
+	
+	padding-bottom: 100px;
+	color: white;
+}
+
+#malibu .col-md-6 {
+	padding-left: 0px;
+}
+
+#malibu h3 {
+	    padding-bottom: 50px;
+}
+
+/* Blue Section - Jelly */
+#jelly {
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 100px;
+	color: white;
+}
+
+.jelly-dark{
+	background-color:#0b2c41;
+	color: white;
+}
+
+.jelly-light{
+	background-color: #2574A9;
+	color: black;
+}
+
+
+.no-style-list{
+	list-style: none;
+}
+
+.no-style-list li {
+	padding: 20px;
+}
+
+.personal-projects li{
+	padding: 20px;
+}
+
+.personal-projects li .header-btn{
+	margin-left: 450px;
+} 
+
+hr{
+	border: 10px solid #1e3799;
+	border-radius: 5px;
+	margin: 55px;
+}
+
+/* FOOTER */
+#f {
+	background: #2f2f2f;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color: white;
+}
+
+#f p {
+	color: white;
+}
+
+#f h4 {
+	font-weight: 400;
+	text-align: center;
+	font-size: 24px;
+}
+
+/* CREDIT */
+#c {
+	background: black;
+	padding: 20px;
+}
+
+#c p {
+	color: white;
+	font-size: 13px;
+}
+/* NAV BAR */
+#sideNav
+{
+	width:100px;
+	height:400px;
+	background-color: white;
+	display:block;
+	position:fixed;
+	top:10px;
+	left:0px;
+
+}
+
+.bar-inner span{
+	display: none;
+}
