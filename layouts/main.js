@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, Center } from '@chakra-ui/react'
 import NavBar from '../components/navbar'
-
+import HexMatrix from '../components/hexMatrix'
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
@@ -19,7 +19,10 @@ const Main = ({ children, router }) => {
         <meta property="og:type" content="website" />
       </Head>
       <NavBar />
-      <Container maxW="container.md" pt={200}>
+      <Center>
+        <HexMatrix />
+      </Center>
+      <Container maxW="container.md" pt={50}>
         {children}
       </Container>
     </Box>

@@ -30,7 +30,10 @@ export default function Home() {
           <Heading as="h2" variant="page-title">
             Armin Sabouri
           </Heading>
-          <p>Digital Craftsman</p>
+          <p>
+            Digital Craftsman&nbsp;/&nbsp;Bitcoiner&nbsp;/&nbsp;Hardware
+            Enthusiast&nbsp;/&nbsp;Lifter
+          </p>
         </Box>
         <Box
           flexShrink={0}
