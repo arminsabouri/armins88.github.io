@@ -89,8 +89,10 @@ export default function (props) {
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoGithub />
-            Source
+            <Center>
+              <Text pr={2}>Source</Text>
+              <IoLogoGithub />
+            </Center>
           </NavLink>
         </Stack>
 

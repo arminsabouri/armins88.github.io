@@ -141,20 +141,26 @@ const Hexdump = () => {
   return (
     <Stack w="100%" p="50px" spacing={0} mt="50px">
       {genesisHexDump.map((hexLine, i) => (
-        <Flex color={rowColor(i)} key={i} fontWeight="900">
-          <Text w="20%">
-            <code>{hexLine[0]}</code>
-          </Text>
-          <Text w="50%">
-            <code>{hexLine[1]}</code>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <code>{hexLine[2]}</code>
-          </Text>
-          <Spacer />
-          <Text w="20%">
-            <code>{hexLine[3]}</code>
-          </Text>
-        </Flex>
+        <a
+          href="https://en.bitcoin.it/wiki/Genesis_block"
+          target="_blank"
+          key={i}
+        >
+          <Flex color={rowColor(i)} fontWeight="900">
+            <Text w="20%">
+              <code>{hexLine[0]}</code>
+            </Text>
+            <Text w="50%">
+              <code>{hexLine[1]}</code>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <code>{hexLine[2]}</code>
+            </Text>
+            <Spacer />
+            <Text w="20%">
+              <code>{hexLine[3]}</code>
+            </Text>
+          </Flex>
+        </a>
       ))}
     </Stack>
   )
