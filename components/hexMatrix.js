@@ -139,7 +139,7 @@ const Hexdump = () => {
   }
 
   return (
-    <Stack w="75%" p="50px" spacing={0} mt="50px">
+    <Stack w="100%" p="50px" spacing={0} mt="50px">
       {genesisHexDump.map((hexLine, i) => (
         <Flex color={rowColor(i)} key={i} fontWeight="900">
           <Text w="20%">

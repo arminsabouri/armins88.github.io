@@ -5,11 +5,21 @@ import {
   Flex,
   HStack,
   useColorModeValue,
-  Link
+  Stack,
+  Link,
+  Text,
+  Center,
+  Menu,
+  MenuButton,
+  IconButton,
+  MenuList,
+  MenuItem
 } from '@chakra-ui/react'
 import Logo from '../components/logo'
 import NextLink from 'next/link'
 import { IoLogoGithub } from 'react-icons/io5'
+import ThemeToggleButton from './themeToggleButton'
+import { HamburgerIcon } from '@chakra-ui/icons'
 
 const NavLink = ({ title, href, currentPath, _target, children, ...props }) => {
   const isActive = currentPath === href
@@ -29,7 +39,9 @@ const NavLink = ({ title, href, currentPath, _target, children, ...props }) => {
 }
 
 export default function (props) {
-  const { paths } = props
+  const { path } = props
+  const GITHUB_LINK = 'https://github.com/armins88/armins88.github.io'
+
   return (
     <Box
       position="fixed"
@@ -40,28 +52,76 @@ export default function (props) {
       zIndex={1}
       {...props}
     >
-      <Container display="flex">
+      <Container
+        display="flex"
+        p={2}
+        maxW="container.md"
+        wrap="wrap"
+        align="center"
+        justify="space-between"
+      >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
         </Flex>
-        {/* Desktop view  */}
-        <HStack spacing="24px">
-          <NavLink href="/works">Works</NavLink>
-          <NavLink href="/posts">Posts</NavLink>
+
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'none', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+        >
+          <NavLink href="/works" path={path}>
+            Works
+          </NavLink>
+          <NavLink href="/posts" path={path}>
+            Posts
+          </NavLink>
           <NavLink
-            href="https://github.com/armins88/armins88.github.io"
+            _target="_blank"
+            href={GITHUB_LINK}
+            path={path}
             display="inline-flex"
-            isplay="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
             <IoLogoGithub />
-            View Source
+            Source
           </NavLink>
-        </HStack>
+        </Stack>
+
+        <Box flex={1} align="right">
+          <ThemeToggleButton />
+
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+            <Menu isLazy id="navbar-menu">
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
+              <MenuList>
+                <NextLink href="/" passHref>
+                  <MenuItem as={Link}>About</MenuItem>
+                </NextLink>
+                <NextLink href="/works" passHref>
+                  <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <MenuItem as={Link} href={GITHUB_LINK}>
+                  View Source
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
+        </Box>
       </Container>
     </Box>
   )
