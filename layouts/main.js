@@ -3,7 +3,7 @@ import { Box, Container, Center } from '@chakra-ui/react'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
 
-const Main = ({ children, router }) => {
+const Main = ({ children, path }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
@@ -19,11 +19,9 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Armin Sabouri's Homepage" />
         <meta property="og:type" content="website" />
       </Head>
-      <NavBar />
       <Container maxW="container.md" pt={50}>
         {children}
       </Container>
-      <Footer />
     </Box>
   )
 }

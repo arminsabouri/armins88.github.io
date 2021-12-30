@@ -1,14 +1,15 @@
 const { ChakraProvider } = require('@chakra-ui/react')
-import Layout from '../layouts/main'
 import Fonts from '../components/fonts'
+import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 
 const Website = ({ Component, pageProps, router }) => {
   return (
     <ChakraProvider>
       <Fonts />
-      <Layout router={router}>
-        <Component {...pageProps} key={router.route} />
-      </Layout>
+      <NavBar path={router.asPath} />
+      <Component {...pageProps} key={router.route} />
+      <Footer />
     </ChakraProvider>
   )
 }

@@ -14,11 +14,11 @@ import Section from '../components/section'
 import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
 import HexMatrix from '../components/hexMatrix'
-import Layout from '../layouts/article'
+import Layout from '../layouts/main'
 
-export default function Home() {
+export default function Home({ path }) {
   return (
-    <Layout title="Home">
+    <Layout title="Home" path={path}>
       <HexMatrix display={{ base: 'inline-block', md: 'none' }}></HexMatrix>
       <Container>
         <Center></Center>
@@ -38,7 +38,7 @@ export default function Home() {
             </Heading>
             <p>
               Digital Craftsman&nbsp;/&nbsp;Bitcoiner&nbsp;/&nbsp;Hardware
-              Enthusiast&nbsp;/&nbsp;Lifter
+              Enthusiast&nbsp;/&nbsp;Lifter&nbsp;/&nbsp;Tea Drinker
             </p>
           </Box>
           <Box
@@ -66,16 +66,18 @@ export default function Home() {
             Briefly
           </Heading>
           <Paragraph>
-            Takuya is a freelance and a full-stack developer based in Osaka with
-            a passion for building digital services/stuff he wants. He has a
-            knack for all things launching products, from planning and designing
-            all the way to solving real-life problems with code. When not
-            online, he loves hanging out with his camera. Currently, he is
-            living off of his own product called{' '}
-            <NextLink href="/works/inkdrop">
-              <Link>Inkdrop</Link>
-            </NextLink>
-            .
+            I am a recently graduated Boston Software Engineer and a Full-Stack
+            Engineer at{' '}
+            <a href="https://keys.casa" target="_blank">
+              Casa
+            </a>
+            . In my professional and educational background, I have worked hard
+            to educated my self to create full stack systems that aim to empower
+            creators and individuals. My interests include resource management
+            in embedded settings, leveraging open source data science frameworks
+            to create an actionable understanding of immense data-sets and
+            peer-to-peer distributed systems. I have vast software engineering
+            experience and enjoy teaching my self new concepts and tools. .
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -93,6 +95,52 @@ export default function Home() {
           <BioSection>
             <BioYear>1997</BioYear>
             Born in Tehran (تهران‎), Iran.
+          </BioSection>
+          <BioSection>
+            <BioYear>2014</BioYear>
+            Began coding by volunteering to build websites for local
+            organizations
+          </BioSection>
+          <BioSection>
+            <BioYear>2016</BioYear>
+            Started studying Computer Science at Boston University
+          </BioSection>
+          <BioSection>
+            <BioYear>2016</BioYear>
+            Began medical Data Science internship at the Mass. General Hospital.
+            Paper accepted 23 October 2020.{' '}
+            <Link
+              href="https://link.springer.com/article/10.1007/s42399-020-00612-6"
+              target="_blank"
+            >
+              Paper
+            </Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>2017</BioYear>
+            Began Full Stack contacting while still full time at school working
+            for the{' '}
+            <Link href="https://cee.mit.edu/" target="_blank">
+              civil and environmental engineering department at MIT
+            </Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>2019</BioYear>
+            Finished Computer Science degree with a focus on embedded systems
+          </BioSection>
+          <BioSection>
+            <BioYear>2019</BioYear>
+            Began work as an embedded systems engineer at
+            <Link href="https://hyperice.com/" target="_blank">
+              NormaTec (now Hyperice)
+            </Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>2020</BioYear>
+            Began work as an full stack engineer at
+            <Link href="https://keys.casa/" target="_blank">
+              Casa
+            </Link>
           </BioSection>
         </Section>
 
