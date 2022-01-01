@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Layout from '../layouts/works'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/gridItem'
+import Link from 'next/link'
 
 const Works = () => (
   <Layout title="Works">
@@ -9,20 +10,19 @@ const Works = () => (
       <Heading as="h3" fontSize={20} mb={4} pt={20}>
         Latest Works
       </Heading>
-
       <SimpleGrid columns={[1, 1]} gap={6}>
         <Section>
           <WorkGridItem
             id="onion78"
             title="Onion78"
-            src="https://github.com/armins88/Onion78"
+            url="https://github.com/armins88/Onion78"
             thumbnail="/images/onion78.jpeg"
             width={100}
             height={100}
           >
-            MIT Hackathon winner 2021. Onion78 aims to implement the payjoin
-            standard (BIP-78) and privacy features (Tor Hidden Services) into a
-            iOS application
+            MIT Hackathon winner 2021. Onion78 implements the payjoin standard
+            (BIP-78) and privacy features (Tor Hidden Services) into an iOS
+            application
           </WorkGridItem>
         </Section>
         <Section>
@@ -64,15 +64,54 @@ const Works = () => (
             Collect and store mempool / network state for txs coming into the
             mempool and recently confirmed txs. Stored locally using Rocks DB.
           </WorkGridItem>
+          <WorkGridItem
+            id="dislection"
+            title="Dislection"
+            url="https://github.com/armins88/Dislection"
+          >
+            A small firefox extension to convert all fonts in the DOM to one
+            tailored for Dyslexic readers. Dislection is part of a larger effort
+            to bring accessibility to the web. I plan to extend the extension to
+            dynamically change text-based content on the web to fit a specific
+            readers needs. There is more research that needs to be done into how
+            we exactly quantify good reading and what properties of text and/or
+            web-page we change in order to improve reading.
+          </WorkGridItem>
         </Section>
       </SimpleGrid>
-
       <Section delay={0.2}>
         <Divider my={6} />
-
         <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
+          Previous Works
         </Heading>
+        <SimpleGrid columns={[1, 1]} gap={6}>
+          <Section>
+            <WorkGridItem
+              id="quest"
+              title="Quest2Arm"
+              src="https://github.com/armins88/quest/tree/arm"
+              thumbnail="/images/quest.png"
+              width={229}
+              height={42}
+            >
+              A port of the real time x86 OS{' '}
+              <Link href="http://www.questos.org/"> quest </Link> to ARMv7.
+              Submited as a final project for CS522 Operating Systems
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+        <SimpleGrid columns={[1, 1]} gap={6}>
+          <Section>
+            <WorkGridItem
+              id="WriteFree"
+              title="Write Free"
+              src="https://github.com/armins88/writefree-fe"
+            >
+              World’s first web-based note-taking application specifically
+              designed to support people with dyslexia.
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
       </Section>
     </Container>
   </Layout>
