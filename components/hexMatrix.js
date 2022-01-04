@@ -1,4 +1,4 @@
-import { Text, Stack, Flex, Center, Spacer } from '@chakra-ui/react'
+import { Text, Stack, Flex, Center, Spacer, Tooltip } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 
 const genesisHexDump = [
@@ -139,27 +139,29 @@ const Hexdump = () => {
   }
 
   return (
-    <Stack w="100%" p="50px" spacing={0} mt="50px">
+    <Stack w="100%" p="50px" mt="50px" spacing={0}>
       {genesisHexDump.map((hexLine, i) => (
         <a
           href="https://en.bitcoin.it/wiki/Genesis_block"
           target="_blank"
           key={i}
         >
-          <Flex color={rowColor(i)} fontWeight="900">
-            <Text w="20%">
-              <code>{hexLine[0]}</code>
-            </Text>
-            <Text w="50%">
-              <code>{hexLine[1]}</code>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <code>{hexLine[2]}</code>
-            </Text>
-            <Spacer />
-            <Text w="20%">
-              <code>{hexLine[3]}</code>
-            </Text>
-          </Flex>
+          <Tooltip label="Click to learn more" placement="left" hasArrow>
+            <Flex color={rowColor(i)} fontWeight="900">
+              <Text w="20%">
+                <code>{hexLine[0]}</code>
+              </Text>
+              <Text w="50%">
+                <code>{hexLine[1]}</code>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <code>{hexLine[2]}</code>
+              </Text>
+              <Spacer />
+              <Text w="20%">
+                <code>{hexLine[3]}</code>
+              </Text>
+            </Flex>
+          </Tooltip>
         </a>
       ))}
     </Stack>

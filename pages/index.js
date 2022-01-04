@@ -20,6 +20,7 @@ export default function Home({ path }) {
   return (
     <Layout title="Home" path={path}>
       <HexMatrix display={{ base: 'inline-block', md: 'none' }}></HexMatrix>
+
       <Container>
         <Center></Center>
         <Box
@@ -76,9 +77,9 @@ export default function Home({ path }) {
             creators and individuals. My interests include resource management
             in embedded settings, leveraging open source data science frameworks
             to create an actionable understanding of immense data-sets,
-            peer-to-peer distributed systems, and cryptographic systems. I have
-            vast software engineering experience and enjoy teaching my self new
-            concepts and tools. .
+            distributed, and cryptographic systems. I have vast software
+            engineering experience and enjoy teaching my self new concepts and
+            tools. .
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
