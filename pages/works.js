@@ -4,6 +4,8 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/gridItem'
 import Link from 'next/link'
 
+import {githubUrl} from '../constants'
+
 const Works = () => (
   <Layout title="Works">
     <Container>
@@ -13,9 +15,32 @@ const Works = () => (
       <SimpleGrid columns={[1, 1]} gap={6}>
         <Section>
           <WorkGridItem
+            id="full"
+            title="F.U.L.L"
+            url={`${githubUrl}/FULL`}
+            thumbnail="/images/kyrios.png"
+            width={100}
+            height={100}
+          >
+            A novel data driven Bitcoin fee estimation algorithm.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="lnd-setup"
+            title="Auto-Provisioning LND"
+            url={`${githubUrl}/auto-provisioned-lnd`}
+            width={100}
+            height={100}
+          >
+            Lnd node auto-provisioning docker set up for cloud enviorment. 
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
             id="onion78"
             title="Onion78"
-            url="https://github.com/armins88/Onion78"
+            url={`${githubUrl}/Onion78`}
             thumbnail="/images/onion78.jpeg"
             width={100}
             height={100}
@@ -59,7 +84,7 @@ const Works = () => (
           <WorkGridItem
             id="btcEtl"
             title="BTC ETL"
-            url="https://github.com/armins88/BTC_ETL"
+            url={`${githubUrl}/armins88/BTC_ETL`}
           >
             Collect and store mempool / network state for txs coming into the
             mempool and recently confirmed txs. Stored locally using Rocks DB.
@@ -67,7 +92,7 @@ const Works = () => (
           <WorkGridItem
             id="dislection"
             title="Dislection"
-            url="https://github.com/armins88/Dislection"
+            url={`${githubUrl}/armins88/Dislection`}
           >
             A small firefox extension to convert all fonts in the DOM to one
             tailored for Dyslexic readers. Dislection is part of a larger effort
@@ -89,7 +114,7 @@ const Works = () => (
             <WorkGridItem
               id="quest"
               title="Quest2Arm"
-              src="https://github.com/armins88/quest/tree/arm"
+              src={`${githubUrl}/quest/tree/arm`}
               thumbnail="/images/quest.png"
               width={229}
               height={42}
@@ -105,7 +130,7 @@ const Works = () => (
             <WorkGridItem
               id="WriteFree"
               title="Write Free"
-              src="https://github.com/armins88/writefree-fe"
+              src={`${githubUrl}/writefree-fe`}
             >
               World’s first web-based note-taking application specifically
               designed to support people with dyslexia.
