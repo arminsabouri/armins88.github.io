@@ -64,45 +64,7 @@ const Works = () => (
             CoinJoin mixes.
           </WorkGridItem>
         </Section>
-        <Section>
-          <WorkGridItem
-            id="Aqua Watch"
-            title="Aqua Watch"
-            url="https://github.com/aqua-watch/Firmware"
-          >
-            Leaching of lead and other contaminants into tap water poses a
-            significant health risk and is expensive to accurately and
-            efficiently detect in real time. We have utilized commer- cially
-            available low-cost water metric sensors to represent water samples
-            in an n-dimensional space and leveraged classification models to
-            detect lead contamination in tap water. Experimental results suggest
-            that our novel methodology is an effective and cost efficient way to
-            detect lead contamination. Furthermore, our data driven approach
-            shows promise of being applied to other heavy metal contaminants and
-            organic pollutants while still using the same hardware.
-          </WorkGridItem>
-          <WorkGridItem
-            id="btcEtl"
-            title="BTC ETL"
-            url={`${githubUrl}/armins88/BTC_ETL`}
-          >
-            Collect and store mempool / network state for txs coming into the
-            mempool and recently confirmed txs. Stored locally using Rocks DB.
-          </WorkGridItem>
-          <WorkGridItem
-            id="dislection"
-            title="Dislection"
-            url={`${githubUrl}/armins88/Dislection`}
-          >
-            A small firefox extension to convert all fonts in the DOM to one
-            tailored for Dyslexic readers. Dislection is part of a larger effort
-            to bring accessibility to the web. I plan to extend the extension to
-            dynamically change text-based content on the web to fit a specific
-            readers needs. There is more research that needs to be done into how
-            we exactly quantify good reading and what properties of text and/or
-            web-page we change in order to improve reading.
-          </WorkGridItem>
-        </Section>
+       
       </SimpleGrid>
       <Section delay={0.2}>
         <Divider my={6} />
@@ -125,6 +87,49 @@ const Works = () => (
             </WorkGridItem>
           </Section>
         </SimpleGrid>
+        <Section>
+          <WorkGridItem
+            id="Aqua Watch"
+            title="Aqua Watch"
+            url="https://github.com/aqua-watch/Firmware"
+          >
+            Leaching of lead and other contaminants into tap water poses a
+            significant health risk and is expensive to accurately and
+            efficiently detect in real time. We have utilized commer- cially
+            available low-cost water metric sensors to represent water samples
+            in an n-dimensional space and leveraged classification models to
+            detect lead contamination in tap water. Experimental results suggest
+            that our novel methodology is an effective and cost efficient way to
+            detect lead contamination. Furthermore, our data driven approach
+            shows promise of being applied to other heavy metal contaminants and
+            organic pollutants while still using the same hardware.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="btcEtl"
+            title="BTC ETL"
+            url={`${githubUrl}/armins88/BTC_ETL`}
+          >
+            Collect and store mempool / network state for txs coming into the
+            mempool and recently confirmed txs. Stored locally using Rocks DB.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="dislection"
+            title="Dislection"
+            url={`${githubUrl}/armins88/Dislection`}
+          >
+            A small firefox extension to convert all fonts in the DOM to one
+            tailored for Dyslexic readers. Dislection is part of a larger effort
+            to bring accessibility to the web. I plan to extend the extension to
+            dynamically change text-based content on the web to fit a specific
+            readers needs. There is more research that needs to be done into how
+            we exactly quantify good reading and what properties of text and/or
+            web-page we change in order to improve reading.
+          </WorkGridItem>
+        </Section>
         <SimpleGrid columns={[1, 1]} gap={6}>
           <Section>
             <WorkGridItem
