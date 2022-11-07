@@ -30,7 +30,7 @@ export default function Home({ path }) {
           textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          Hello, I&apos;m a full-stack developer based in Boston!
+          Hello, I&apos;m a software engineer based in Boston!
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -38,8 +38,8 @@ export default function Home({ path }) {
               Armin Sabouri
             </Heading>
             <p>
-              Digital Craftsman&nbsp;/&nbsp;Bitcoiner&nbsp;/&nbsp;Hardware
-              Enthusiast&nbsp;/&nbsp;Lifter&nbsp;/&nbsp;Tea Drinker
+              Bitcoin Engineer&nbsp;/&nbsp;Embedded Systems
+              Enthusiast&nbsp;/&nbsp;Lifter&nbsp;/&nbsp;Tea Drinker/&nbsp;Music Improviser 
             </p>
           </Box>
           <Box
@@ -58,7 +58,6 @@ export default function Home({ path }) {
               display="inline-block"
               borderRadius="100%"
               src="/images/armin.png"
-              alt="Profile image"
             />
           </Box>
         </Box>
@@ -67,12 +66,7 @@ export default function Home({ path }) {
             Briefly
           </Heading>
           <Paragraph>
-            I am a recently graduated Boston based Software Engineer and a
-            Full-Stack Engineer at{' '}
-            <a href="https://keys.casa" target="_blank">
-              Casa
-            </a>
-            . In my professional and educational background, I have worked hard
+            In my professional and educational background, I have worked hard
             to educated my self to create full stack systems that aim to empower
             creators and individuals. My interests include resource management
             in embedded settings, leveraging open source data science frameworks
@@ -115,12 +109,12 @@ export default function Home({ path }) {
               href="https://link.springer.com/article/10.1007/s42399-020-00612-6"
               target="_blank"
             >
-              Paper
+              Read our paper!
             </Link>
           </BioSection>
           <BioSection>
             <BioYear>2017</BioYear>
-            Began Full Stack contacting while still full time at school working
+            Began Full Stack contracting while full-time at school working
             for the{' '}
             <Link href="https://cee.mit.edu/" target="_blank">
               civil and environmental engineering department at MIT
@@ -139,22 +133,11 @@ export default function Home({ path }) {
           </BioSection>
           <BioSection>
             <BioYear>2020</BioYear>
-            Began work as an full stack engineer at
+            Currently work as a Bitcoin Engineer focusing on Multisig at
             <Link href="https://keys.casa/" target="_blank">
-              Casa
+              &nbsp; Casa
             </Link>
           </BioSection>
-        </Section>
-        <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
-            I ♥
-          </Heading>
-          <Paragraph>
-            Art, Music, Olympic style weightlifting,{' '}
-            <Link href="https://github.com/armins88" target="_blank">
-              Coding
-            </Link>
-          </Paragraph>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
