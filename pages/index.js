@@ -117,7 +117,7 @@ export default function Home({ path }) {
             Began Full Stack contracting while full-time at school working
             for the{' '}
             <Link href="https://cee.mit.edu/" target="_blank">
-              civil and environmental engineering department at MIT
+              Civil and Environmental Engineering department at MIT
             </Link>
           </BioSection>
           <BioSection>
@@ -128,14 +128,14 @@ export default function Home({ path }) {
             <BioYear>2019</BioYear>
             Began work as an embedded systems engineer at
             <Link href="https://hyperice.com/" target="_blank">
-              NormaTec (now Hyperice)
+              &nbsp;NormaTec (now Hyperice)
             </Link>
           </BioSection>
           <BioSection>
             <BioYear>2020</BioYear>
             Currently work as a Bitcoin Engineer focusing on Multisig at
             <Link href="https://keys.casa/" target="_blank">
-              &nbsp; Casa
+              &nbsp;Casa
             </Link>
           </BioSection>
         </Section>
