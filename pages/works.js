@@ -4,7 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/gridItem'
 import Link from 'next/link'
 
-import {githubUrl} from '../constants'
+import { githubUrl } from '../constants'
 
 const Works = () => (
   <Layout title="Works">
@@ -15,6 +15,23 @@ const Works = () => (
       <SimpleGrid columns={[1, 1]} gap={6}>
         <Section>
           <WorkGridItem
+            id="lnd-config-generator"
+            title="LND Config Generator"
+            date="Dec 2022"
+            url="https://0xbeefcaf3.github.io/LND-config-generator/"
+            thumbnail="/images/lightning_wrench.png"
+            width={100}
+            height={100}
+          >
+            LND has over 200+ config options. Everything ranging from btcd
+            backend parameters to configuring your healthchecks. This generator
+            is meant to expose and explain all of those options so that any user
+            can make the most of the flexibility available to them. As well
+            providing a variety of preset "node classes".
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
             id="nolooking"
             title="Nolooking"
             date="Oct 2022"
@@ -23,7 +40,12 @@ const Works = () => (
             width={100}
             height={100}
           >
-            We abstract the whole "getting connected" stage of lightning node setup for operators into a single QR code that prepares one bitcoin transaction to get a node fully connected. Just load up our app, tweak the config if you like, scan, and send. You'll have a well connected, balanced lightning node right away.
+            We abstract the whole "getting connected" stage of lightning node
+            setup for operators into a single QR code that prepares one bitcoin
+            transaction to get a node fully connected. Just load up our app,
+            tweak the config if you like, scan, and send. You'll have a well
+            connected, balanced lightning node right away. Nolooking is a
+            Bolt.fun hackathon finalist.
           </WorkGridItem>
         </Section>
         <Section>
@@ -36,12 +58,12 @@ const Works = () => (
             width={100}
             height={100}
           >
-            Boston BitDevs is a Bitcoin-focused, more technical meetup. Like all worldwide BitDevs groups, we run a Socratic Seminar
+            Boston BitDevs is a Bitcoin-focused, more technical meetup. Like all
+            worldwide BitDevs groups, we run a Socratic Seminar
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
-            
             id="lnd-setup"
             title="Auto-Provisioning LND"
             date="June 2022"
@@ -49,7 +71,7 @@ const Works = () => (
             width={100}
             height={100}
           >
-            Lnd node auto-provisioning docker set up for cloud enviorment. 
+            Lnd node auto-provisioning docker set up for cloud enviorment.
           </WorkGridItem>
         </Section>
         <Section>
@@ -95,7 +117,6 @@ const Works = () => (
             CoinJoin mixes.
           </WorkGridItem>
         </Section>
-       
       </SimpleGrid>
       <Section delay={0.2}>
         <Divider my={6} />
