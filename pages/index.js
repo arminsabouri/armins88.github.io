@@ -39,7 +39,8 @@ export default function Home({ path }) {
             </Heading>
             <p>
               Bitcoin Engineer&nbsp;/&nbsp;Embedded Systems
-              Enthusiast&nbsp;/&nbsp;Lifter&nbsp;/&nbsp;Tea Drinker/&nbsp;Music Improviser 
+              Enthusiast&nbsp;/&nbsp;Lifter&nbsp;/&nbsp;Tea Drinker/&nbsp;Music
+              Improviser
             </p>
           </Box>
           <Box
@@ -66,14 +67,14 @@ export default function Home({ path }) {
             Briefly
           </Heading>
           <Paragraph>
-            In my professional and educational background, I have worked hard
-            to educated my self to create full stack systems that aim to empower
+            In my professional and educational background, I have worked hard to
+            educated my self to create full stack systems that aim to empower
             creators and individuals. My interests include resource management
             in embedded settings, leveraging open source data science frameworks
             to create an actionable understanding of immense data-sets,
             distributed, and cryptographic systems. I have vast software
             engineering experience and enjoy teaching my self new concepts and
-            tools. .
+            tools.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -114,8 +115,8 @@ export default function Home({ path }) {
           </BioSection>
           <BioSection>
             <BioYear>2017</BioYear>
-            Began Full Stack contracting while full-time at school working
-            for the{' '}
+            Began Full Stack contracting while full-time at school working for
+            the{' '}
             <Link href="https://cee.mit.edu/" target="_blank">
               Civil and Environmental Engineering department at MIT
             </Link>
