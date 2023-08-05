@@ -133,10 +133,23 @@ export default function Home({ path }) {
             </Link>
           </BioSection>
           <BioSection>
-            <BioYear>2020</BioYear>
-            Currently work as a Bitcoin Engineer focusing on Multisig at
+            <BioYear>2020-2023</BioYear>
+            Worked as a Bitcoin Engineer focusing on the Multisig wallet at
             <Link href="https://keys.casa/" target="_blank">
               &nbsp;Casa
+            </Link>
+          </BioSection>
+          <BioSection>
+            <BioYear>2023 Feb-April</BioYear>
+            Contracted as a R&D Embedded Engineer at Dandelion Technologies.
+            Focusing on devloping an suite of IoT sensors
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            Currently work as a Lead Bitcoin Engineer focusing on protocol
+            devlopment at
+            <Link href="https://www.botanixlabs.xyz/en/home" target="_blank">
+              &nbsp;Botanix Labs
             </Link>
           </BioSection>
         </Section>
