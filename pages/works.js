@@ -15,6 +15,41 @@ const Works = () => (
       <SimpleGrid columns={[1, 1]} gap={6}>
         <Section>
           <WorkGridItem
+            id="frost"
+            title="Frost Notebook"
+            date="Aug 2023"
+            url="https://github.com/0xBEEFCAF3/FROST-Notebook"
+            thumbnail="/images/frost.png"
+            width={100}
+            height={100}
+          >
+            Educational implementation of the FROST (Flexible Round-Optimized
+            Schnorr Threshold) cryptographic protocol. FROST is a protocol that
+            enables secure multi-party threshold digital signatures.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="munstr"
+            title="Munstr"
+            date="April 2023"
+            url="https://github.com/0xBEEFCAF3/munstr"
+            thumbnail="/images/munstr.png"
+            width={100}
+            height={100}
+          >
+            MIT Bitcoin Hackathon First Place: Munstr (MuSig + Nostr) is a combination of Schnorr signature based
+            MuSig (multisignature) keys in a terminal based wallet using
+            decentralized Nostr networks as a communication layer to facilitate
+            a secure and encrypted method of transporting and digitally signing
+            bitcoin transactions in a way that chain analysis cannot identify
+            the nature and setup of the transaction data. To anyone observing
+            the blockchain, Munstr transactions look like single key
+            Pay-to-Taproot (P2TR) spends.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
             id="lnd-config-generator"
             title="LND Config Generator"
             date="Dec 2022"
