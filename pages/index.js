@@ -68,13 +68,9 @@ export default function Home({ path }) {
           </Heading>
           <Paragraph>
             In my professional and educational background, I have worked hard to
-            educated my self to create full stack systems that aim to empower
-            creators and individuals. My interests include resource management
-            in embedded settings, leveraging open source data science frameworks
-            to create an actionable understanding of immense data-sets,
-            distributed, and cryptographic systems. I have vast software
-            engineering experience and enjoy teaching my self new concepts and
-            tools.
+            to create full stack systems that aim to empower
+            the self-sovereignty of individuals. My interests include distributed, and
+            cryptographic systems, Bitcoin, and embedded systems.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -146,8 +142,7 @@ export default function Home({ path }) {
           </BioSection>
           <BioSection>
             <BioYear>2023</BioYear>
-            Currently work as a Lead Bitcoin Engineer focusing on protocol
-            devlopment at
+            Currently work as a Co-founder and Lead Bitcoin Engineer at
             <Link href="https://www.botanixlabs.xyz/en/home" target="_blank">
               &nbsp;Botanix Labs
             </Link>
