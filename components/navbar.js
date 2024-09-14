@@ -89,12 +89,7 @@ export default function (props) {
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
-          >
-            <Center>
-              <Text pr={2}>Source</Text>
-              <IoLogoGithub />
-            </Center>
-          </NavLink>
+          ></NavLink>
         </Stack>
 
         <Box flex={1} align="right">
@@ -121,9 +116,6 @@ export default function (props) {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Writing</MenuItem>
                 </NextLink>
-                <MenuItem as={Link} href={GITHUB_LINK}>
-                  View Source
-                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
