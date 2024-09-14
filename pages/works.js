@@ -10,21 +10,36 @@ const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4} pt={20}>
-        Latest Activities
+        Open Source Projects
       </Heading>
       <SimpleGrid columns={[1, 1]} gap={6}>
         <Section>
-         <WorkGridItem
+          <WorkGridItem
             id="cat"
-            title="Re-Enable OP_CAT (BIP-347)"
-            date="April 2024"
-            url="https://github.com/bitcoin/bips/blob/master/bip-0347.mediawiki"
+            title="Felix"
+            date="July 2024"
+            url="https://github.com/0xBEEFCAF3/felix"
             thumbnail="/images/CAT_emoji.webp"
             width={100}
             height={100}
           >
-            This BIP introduces OP_CAT as a tapscript opcode which allows the concatenation of two values on the stack. OP_CAT would be activated via a soft fork by redefining the opcode OP_SUCCESS126 (126 in decimal and 0x7e in hexadecimal). This is the same opcode value used by the original OP_CAT.
+            Felix (the feline indexer) is a Bitcoin OP_CAT transaction indexer.
+            Since we deployed OP_CAT on Bitcoin signet, developers have been
+            using OP_CAT to experiment with new ideas. Ranging from a PoW faucet
+            to verifying STARK proofs. Felix collects any transaction that uses
+            OP_CAT and makes it easier to search and analyze buckets of spends.
           </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="cat"
+            title="OP_CAT in Bitcoin Signet"
+            date="July 2024"
+            url="https://github.com/bitcoin-inquisition/bitcoin/pull/39"
+            thumbnail="/images/CAT_emoji.webp"
+            width={100}
+            height={100}
+          ></WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
@@ -51,31 +66,14 @@ const Works = () => (
             width={100}
             height={100}
           >
-            MIT Bitcoin Hackathon First Place: Munstr (MuSig + Nostr) is a combination of Schnorr signature based
-            MuSig (multisignature) keys in a terminal based wallet using
-            decentralized Nostr networks as a communication layer to facilitate
-            a secure and encrypted method of transporting and digitally signing
-            bitcoin transactions in a way that chain analysis cannot identify
-            the nature and setup of the transaction data. To anyone observing
-            the blockchain, Munstr transactions look like single key
-            Pay-to-Taproot (P2TR) spends.
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="lnd-config-generator"
-            title="LND Config Generator"
-            date="Dec 2022"
-            url="https://0xbeefcaf3.github.io/LND-config-generator/"
-            thumbnail="/images/lightning_wrench.png"
-            width={100}
-            height={100}
-          >
-            LND has over 200+ config options. Everything ranging from btcd
-            backend parameters to configuring your healthchecks. This generator
-            is meant to expose and explain all of those options so that any user
-            can make the most of the flexibility available to them. As well
-            providing a variety of preset "node classes".
+            MIT Bitcoin Hackathon First Place: Munstr (MuSig + Nostr) is a
+            combination of Schnorr signature based MuSig (multisignature) keys
+            in a terminal based wallet using decentralized Nostr networks as a
+            communication layer to facilitate a secure and encrypted method of
+            transporting and digitally signing bitcoin transactions in a way
+            that chain analysis cannot identify the nature and setup of the
+            transaction data. To anyone observing the blockchain, Munstr
+            transactions look like single key Pay-to-Taproot (P2TR) spends.
           </WorkGridItem>
         </Section>
         <Section>
@@ -94,32 +92,6 @@ const Works = () => (
             tweak the config if you like, scan, and send. You'll have a well
             connected, balanced lightning node right away. Nolooking is a
             Bolt.fun hackathon finalist.
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="bostonbitdevs"
-            title="Co-Host Boston Bitdevs"
-            date="September 2022"
-            url="https://bostonbitdevs.org/"
-            thumbnail="/images/bostonbitdevs.jpeg"
-            width={100}
-            height={100}
-          >
-            Boston BitDevs is a Bitcoin-focused, more technical meetup. Like all
-            worldwide BitDevs groups, we run a Socratic Seminar
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="lnd-setup"
-            title="Auto-Provisioning LND"
-            date="June 2022"
-            url={`${githubUrl}/auto-provisioned-lnd`}
-            width={100}
-            height={100}
-          >
-            Lnd node auto-provisioning docker set up for cloud enviorment.
           </WorkGridItem>
         </Section>
         <Section>
@@ -203,6 +175,35 @@ const Works = () => (
             detect lead contamination. Furthermore, our data driven approach
             shows promise of being applied to other heavy metal contaminants and
             organic pollutants while still using the same hardware.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="lnd-setup"
+            title="Auto-Provisioning LND"
+            date="June 2022"
+            url={`${githubUrl}/auto-provisioned-lnd`}
+            width={100}
+            height={100}
+          >
+            Lnd node auto-provisioning docker set up for cloud enviorment.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="lnd-config-generator"
+            title="LND Config Generator"
+            date="Dec 2022"
+            url="https://0xbeefcaf3.github.io/LND-config-generator/"
+            thumbnail="/images/lightning_wrench.png"
+            width={100}
+            height={100}
+          >
+            LND has over 200+ config options. Everything ranging from btcd
+            backend parameters to configuring your healthchecks. This generator
+            is meant to expose and explain all of those options so that any user
+            can make the most of the flexibility available to them. As well
+            providing a variety of preset "node classes".
           </WorkGridItem>
         </Section>
         <Section>

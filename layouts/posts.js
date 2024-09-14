@@ -26,9 +26,7 @@ const Layout = ({ children, title }) => (
           <meta property="og:title" content={title} />
         </Head>
       )}
-      <Center p={50}>No Content Yet</Center>
-      {/* {children} */}
-
+      {children}
       <GridItemStyle />
     </>
   </motion.article>

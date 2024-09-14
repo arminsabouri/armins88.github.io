@@ -77,12 +77,10 @@ export default function (props) {
           <NavLink href="/works" path={path}>
             Works
           </NavLink>
-          {/* <NavLink href="/posts" path={path}>
-            Posts
-          </NavLink> */}
-          <NavLink href="/Armin_Sabouri_Resume.pdf">
-            CV
+          <NavLink href="/posts" path={path}>
+            Writing
           </NavLink>
+          <NavLink href="/Armin_Sabouri_Resume.pdf">CV</NavLink>
           <NavLink
             _target="_blank"
             href={GITHUB_LINK}
@@ -120,9 +118,9 @@ export default function (props) {
                 <NavLink href="/Armin_Sabouri_Resume.pdf">
                   <MenuItem as={Link}>CV</MenuItem>
                 </NavLink>
-                {/* <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink> */}
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Writing</MenuItem>
+                </NextLink>
                 <MenuItem as={Link} href={GITHUB_LINK}>
                   View Source
                 </MenuItem>

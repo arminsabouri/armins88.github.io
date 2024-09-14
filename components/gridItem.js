@@ -14,7 +14,7 @@ export const WorkGridItem = ({
   <Box w="100%" textAlign="center">
     <a href={url} target="_blank">
       <LinkBox cursor="pointer">
-        {thumbnail && (
+        {/* {thumbnail && (
           <img
             id={id}
             src={thumbnail}
@@ -23,20 +23,17 @@ export const WorkGridItem = ({
             width={width}
             height={height}
           />
-        )}
+        )} */}
         <LinkOverlay href={url} target="_blank">
           <Text mt={2} fontSize={20}>
             {title}
-            {date && 
-            <>
-              <span>&nbsp;-&nbsp;</span>
-              <span fontSize={15}>
-                {date}
-              </span>
-            </>
-            }
+            {date && (
+              <>
+                <span>&nbsp;-&nbsp;</span>
+                <span fontSize={15}>{date}</span>
+              </>
+            )}
           </Text>
-          
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
       </LinkBox>

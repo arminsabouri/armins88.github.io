@@ -22,16 +22,6 @@ export default function Home({ path }) {
       <HexMatrix display={{ base: 'inline-block', md: 'none' }}></HexMatrix>
 
       <Container>
-        <Center></Center>
-        <Box
-          borderRadius="lg"
-          mb={6}
-          p={3}
-          textAlign="center"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        >
-          Hello, I&apos;m a software engineer based in Boston!
-        </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -67,10 +57,16 @@ export default function Home({ path }) {
             Briefly
           </Heading>
           <Paragraph>
-            In my professional and educational background, I have worked hard to
-            to create full stack systems that aim to empower
-            the self-sovereignty of individuals. My interests include distributed, and
-            cryptographic systems, Bitcoin, and embedded systems.
+            I am a software engineer and researcher based in Boston. My
+            interests include distributed, and cryptographic systems, Bitcoin,
+            and embedded systems. For the past five years, I have been working
+            in the Bitcoin self-custody and privacy space, and I am currently
+            working on protocol development at{' '}
+            <Link href="https://www.botanixlabs.xyz/en/home" target="_blank">
+              Botanix Labs
+            </Link>
+            . In my free time, I research and develop embedded systems and
+            protocol upgrades to Bitcoin.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -81,7 +77,7 @@ export default function Home({ path }) {
           </Box>
         </Section>
 
-        <Section delay={0.2}>
+        {/* <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
@@ -155,7 +151,7 @@ export default function Home({ path }) {
           <Paragraph>
             3D73 A3F8 8F83 AC0C 11B9 9EFE CF77 A4CB 0655 6344
           </Paragraph>
-        </Section>
+        </Section> */}
       </Container>
     </Layout>
   )
