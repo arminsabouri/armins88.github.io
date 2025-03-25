@@ -61,9 +61,9 @@ export default function Home({ path }) {
             interests include distributed, and cryptographic systems, Bitcoin,
             and embedded systems. For the past five years, I have been working
             in the Bitcoin self-custody and privacy space, and I am currently
-            working on protocol development at{' '}
-            <Link href="https://www.botanixlabs.xyz/en/home" target="_blank">
-              Botanix Labs
+            working Bitcoin privacy research and development at{' '}
+            <Link href="https://payjoin.devkit.org/" target="_blank">
+              Payjoin Devkit
             </Link>
             . In my free time, I research and develop embedded systems and
             protocol upgrades to Bitcoin.
