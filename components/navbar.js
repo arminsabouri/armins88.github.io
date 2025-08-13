@@ -37,7 +37,7 @@ const NavLink = ({ title, href, currentPath, _target, children, ...props }) => {
 
 export default function (props) {
   const { path } = props
-  const GITHUB_LINK = 'https://github.com/0xBEEFCAF3'
+  const GITHUB_LINK = 'https://github.com/arminsabouri'
 
   return (
     <Box

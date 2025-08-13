@@ -2,6 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../layouts/posts'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/gridItem'
+import { githubUrl } from '../constants'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -15,7 +16,7 @@ const Posts = () => (
             id=""
             title="Emulating Check Sig From Stack (OP_CSFS) using OP_CAT"
             date="Sept 2024"
-            url="https://gist.github.com/0xBEEFCAF3/fcc28c0f1ca8f9ede9e5037f03760d34"
+            url={`${githubUrl}/fcc28c0f1ca8f9ede9e5037f03760d34`}
             thumbnail="/images/CAT_emoji.webp"
             width={100}
             height={100}
@@ -75,7 +76,7 @@ const Posts = () => (
           id=""
           title="Unhardened Derivation Paths for Multisignature Coordination"
           date="April 2023"
-          url="https://gist.github.com/0xBEEFCAF3/f6b451c171d7c3087098b85956bed316"
+          url={`${githubUrl}/f6b451c171d7c3087098b85956bed316`}
           thumbnail="/images/CAT_emoji.webp"
           width={100}
           height={100}

@@ -18,7 +18,7 @@ const Works = () => (
             id="cat"
             title="Felix"
             date="July 2024"
-            url="https://github.com/0xBEEFCAF3/felix"
+            url={`${githubUrl}/felix`}
             thumbnail="/images/CAT_emoji.webp"
             width={100}
             height={100}
@@ -46,7 +46,7 @@ const Works = () => (
             id="frost"
             title="Frost Notebook"
             date="Aug 2023"
-            url="https://github.com/0xBEEFCAF3/FROST-Notebook"
+            url={`${githubUrl}/FROST-Notebook`}
             thumbnail="/images/frost.png"
             width={100}
             height={100}
@@ -61,7 +61,7 @@ const Works = () => (
             id="munstr"
             title="Munstr"
             date="April 2023"
-            url="https://github.com/0xBEEFCAF3/munstr"
+            url={`${githubUrl}/munstr`}
             thumbnail="/images/munstr.png"
             width={100}
             height={100}
@@ -194,7 +194,7 @@ const Works = () => (
             id="lnd-config-generator"
             title="LND Config Generator"
             date="Dec 2022"
-            url="https://0xbeefcaf3.github.io/LND-config-generator/"
+            url={`${githubUrl}/LND-config-generator`}
             thumbnail="/images/lightning_wrench.png"
             width={100}
             height={100}
@@ -204,16 +204,6 @@ const Works = () => (
             is meant to expose and explain all of those options so that any user
             can make the most of the flexibility available to them. As well
             providing a variety of preset "node classes".
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="btcEtl"
-            title="BTC ETL"
-            url={`${githubUrl}/armins88/BTC_ETL`}
-          >
-            Collect and store mempool / network state for txs coming into the
-            mempool and recently confirmed txs. Stored locally using Rocks DB.
           </WorkGridItem>
         </Section>
         <Section>
