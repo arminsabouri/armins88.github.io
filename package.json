@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "18.x",
+  "version": "20.x",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
