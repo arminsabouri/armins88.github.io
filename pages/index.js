@@ -11,7 +11,6 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import Section from '../components/section'
-import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
 import HexMatrix from '../components/hexMatrix'
 import Layout from '../layouts/main'
@@ -77,81 +76,11 @@ export default function Home({ path }) {
           </Box>
         </Section>
 
-        {/* <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
-            Bio
-          </Heading>
-          <BioSection>
-            <BioYear>1997</BioYear>
-            Born in Tehran (تهران‎), Iran.
-          </BioSection>
-          <BioSection>
-            <BioYear>2014</BioYear>
-            Began coding by volunteering to build websites for local
-            organizations
-          </BioSection>
-          <BioSection>
-            <BioYear>2016</BioYear>
-            Started studying Computer Science at Boston University
-          </BioSection>
-          <BioSection>
-            <BioYear>2016</BioYear>
-            Began medical Data Science internship at the Mass. General Hospital.
-            Paper accepted 23 October 2020.{' '}
-            <Link
-              href="https://link.springer.com/article/10.1007/s42399-020-00612-6"
-              target="_blank"
-            >
-              Read our paper!
-            </Link>
-          </BioSection>
-          <BioSection>
-            <BioYear>2017</BioYear>
-            Began Full Stack contracting while full-time at school working for
-            the{' '}
-            <Link href="https://cee.mit.edu/" target="_blank">
-              Civil and Environmental Engineering department at MIT
-            </Link>
-          </BioSection>
-          <BioSection>
-            <BioYear>2019</BioYear>
-            Finished Computer Science degree with a focus on embedded systems
-          </BioSection>
-          <BioSection>
-            <BioYear>2019</BioYear>
-            Began work as an embedded systems engineer at
-            <Link href="https://hyperice.com/" target="_blank">
-              &nbsp;NormaTec (now Hyperice)
-            </Link>
-          </BioSection>
-          <BioSection>
-            <BioYear>2020-2023</BioYear>
-            Worked as a Bitcoin Engineer focusing on the Multisig wallet at
-            <Link href="https://keys.casa/" target="_blank">
-              &nbsp;Casa
-            </Link>
-          </BioSection>
-          <BioSection>
-            <BioYear>2023 Feb-April</BioYear>
-            Contracted as a R&D Embedded Engineer at Dandelion Technologies.
-            Focusing on devloping an suite of IoT sensors
-          </BioSection>
-          <BioSection>
-            <BioYear>2023</BioYear>
-            Currently work as a Co-founder and Lead Bitcoin Engineer at
-            <Link href="https://www.botanixlabs.xyz/en/home" target="_blank">
-              &nbsp;Botanix Labs
-            </Link>
-          </BioSection>
-        </Section>
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
-            GPG Fingerprint
-          </Heading>
           <Paragraph>
             3D73 A3F8 8F83 AC0C 11B9 9EFE CF77 A4CB 0655 6344
           </Paragraph>
-        </Section> */}
+        </Section>
       </Container>
     </Layout>
   )

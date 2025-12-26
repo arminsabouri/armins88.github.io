@@ -14,7 +14,6 @@ import {
 } from '@chakra-ui/react'
 import Logo from '../components/logo'
 import NextLink from 'next/link'
-import { IoLogoGithub } from 'react-icons/io5'
 import ThemeToggleButton from './themeToggleButton'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
