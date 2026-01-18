@@ -17,7 +17,7 @@ const Main = ({ children, path }) => {
         <meta property="og:site_name" content="Armin Sabouri's Homepage" />
         <meta property="og:type" content="website" />
       </Head>
-      <Container maxW="container.md" pt={50}>
+      <Container maxW="container.xl" pt={50}>
         {children}
       </Container>
     </Box>
