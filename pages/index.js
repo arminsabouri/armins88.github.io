@@ -47,22 +47,22 @@ export default function Home({ path }) {
           Some stuff I do
         </Heading>
 
-        <Paragraph mb={12}>
-          I develop and distribute improvements to Bitcoin. My work centers on Bitcoin privacy, including protocol upgrades to Payjoin (<Link href="https://github.com/bitcoin/bips/blob/master/bip-0077.mediawiki" target="_blank">BIP-77/78</Link>) through contributions to the <Link href="https://github.com/payjoin/rust-payjoin/" target="_blank">Payjoin Dev Kit</Link>.
-          I am currently focused on multi-party Payjoins, which allows for a more private payments and enables counter-party privacy. To rigorously model and evaluate the privacy of these protocols we are currently developing an <Link href="https://github.com/payjoin/tx-indexer" target="_blank">analysis framework</Link>.
-        </Paragraph>
+        <Box mb={6}>
+          <Text>I develop and distribute improvements to Bitcoin. My work centers on Bitcoin privacy, including protocol upgrades to Payjoin (<Link href="https://github.com/bitcoin/bips/blob/master/bip-0077.mediawiki" target="_blank">BIP-77/78</Link>) through contributions to the <Link href="https://github.com/payjoin/rust-payjoin/" target="_blank">Payjoin Dev Kit</Link>.
+            I am currently focused on multi-party Payjoins, which allows for a more private payments and enables counter-party privacy. To rigorously model and evaluate the privacy of these protocols we are currently developing an <Link href="https://github.com/payjoin/tx-indexer" target="_blank">analysis framework</Link>.</Text>
+        </Box>
 
-        <Paragraph mb={12}>
-          I retain an interest in Bitcoin scalability and future softfork proposals. In the past I have work on <Link href="https://github.com/bitcoin/bips/blob/master/bip-0347.mediawiki" target="_blank">BIP-347</Link> and <Link href="https://gist.github.com/arminsabouri/fcc28c0f1ca8f9ede9e5037f03760d34" target="_blank">tricks</Link> that you can do with OP_CAT.
-          I was the CTO and co-founder of <Link href="https://botanixlabs.com/" target="_blank">Botanix Labs</Link> where we developed side systems for Bitcoin.
-        </Paragraph>
+        <Box mb={6}>
+          <Text>I retain an interest in Bitcoin scalability and future softfork proposals. In the past I have work on <Link href="https://github.com/bitcoin/bips/blob/master/bip-0347.mediawiki" target="_blank">BIP-347</Link> and <Link href="https://gist.github.com/arminsabouri/fcc28c0f1ca8f9ede9e5037f03760d34" target="_blank">tricks</Link> that you can do with OP_CAT.</Text>
+          <Text>I was the CTO and co-founder of <Link href="https://botanixlabs.com/" target="_blank">Botanix Labs</Link> where we developed side systems for Bitcoin.</Text>
+        </Box>
 
-        <Paragraph mb={8}>
-          My other interest is in how we can scale self-custody and make it a practical experience. I worked on <Link href="https://casa.com/" target="_blank">Casa</Link>'s multisig coordinator as well as a self-custodial lightning wallet.
-        </Paragraph>
-        <Paragraph mb={8}>
-          I am co-host of <Link href="https://bostonbitdevs.org/" target="_blank">Boston Bitdevs</Link>. If you are in the Boston area and interested in learning more about Bitcoin, please join us!
-        </Paragraph>
+        <Box mb={6}>
+          <Text>My other interest is in how we can scale self-custody and make it a practical experience. I worked on <Link href="https://casa.com/" target="_blank">Casa</Link>'s multisig coordinator as well as a self-custodial lightning wallet.</Text>
+        </Box>
+        <Box mb={6}>
+          <Text>I am co-host of <Link href="https://bostonbitdevs.org/" target="_blank">Boston Bitdevs</Link>. If you are in the Boston area and interested in learning more about Bitcoin, please join us!</Text>
+        </Box>
       </Section>
 
       <Section delay={0.3}>
