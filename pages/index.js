@@ -49,7 +49,7 @@ export default function Home({ path }) {
 
         <Box mb={6}>
           <Text>I develop and distribute improvements to Bitcoin. My work centers on Bitcoin privacy, including protocol upgrades to Payjoin (<Link href="https://github.com/bitcoin/bips/blob/master/bip-0077.mediawiki" target="_blank">BIP-77/78</Link>) through contributions to the <Link href="https://github.com/payjoin/rust-payjoin/" target="_blank">Payjoin Dev Kit</Link>.
-            I am currently focused on multi-party Payjoins, which allows for a more private payments and enables counter-party privacy. To rigorously model and evaluate the privacy of these protocols we are currently developing an <Link href="https://github.com/payjoin/tx-indexer" target="_blank">analysis framework</Link>.</Text>
+            I am currently focused on multi-party Payjoins, which allows for more private payments and enables counter-party privacy. To rigorously model and evaluate the privacy of these protocols we are currently developing an <Link href="https://github.com/payjoin/tx-indexer" target="_blank">analysis framework</Link>.</Text>
         </Box>
 
         <Box mb={6}>
@@ -65,36 +65,36 @@ export default function Home({ path }) {
         </Box>
       </Section>
 
-      <Section delay={0.3}>
+      {/* TODO: link for chaincase, nips, ohttp electrum, unhardened derivation paths bip, frost work & dalias exploration work */}
+      {/* <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Other stuff I did
         </Heading>
-        {/* TODO: link for chaincase, nips, ohttp electrum, unhardened derivation paths bip, frost work & dalias exploration work */}
-        <Box mb={6}>
-          <Text mb={2}>LND utilities I used when I was working on Lightning wallets.</Text>
-          <Text mb={4}>
-            <strong><Link href={`${githubUrl}/auto-provisioned-lnd`} target="_blank">Auto-Provisioning LND</Link></strong> - <em>June 2022</em> - Lnd node auto-provisioning docker set up for cloud environment.
-          </Text>
-          <Text>
-            <strong><Link href={`${githubUrl}/LND-config-generator`} target="_blank">LND Config Generator</Link></strong> - <em>Dec 2022</em> - LND has over 200+ config options. Everything ranging from btcd backend parameters to configuring your healthchecks. This generator is meant to expose and explain all of those options so that any user can make the most of the flexibility available to them. As well providing a variety of preset "node classes".
-          </Text>
-        </Box>
-        <Box mb={6}>
-          <Text>
-            <strong><Link href={`${githubUrl}/quest/tree/arm`} target="_blank">Quest2Arm</Link></strong> - A port of the real time x86 OS <Link href="http://www.questos.org/" target="_blank">quest</Link> to ARMv7. Submitted as a final project for CS522 Operating Systems.
-          </Text>
-        </Box>
-        <Box mb={6}>
-          <Text>
-            <strong><Link href="https://github.com/aqua-watch/Firmware" target="_blank">Aqua Watch</Link></strong> - Leaching of lead and other contaminants into tap water poses a significant health risk and is expensive to accurately and efficiently detect in real time. We have utilized commercially available low-cost water metric sensors to represent water samples in an n-dimensional space and leveraged classification models to detect lead contamination in tap water. Experimental results suggest that our novel methodology is an effective and cost efficient way to detect lead contamination. Furthermore, our data driven approach shows promise of being applied to other heavy metal contaminants and organic pollutants while still using the same hardware.
-          </Text>
-        </Box>
-        <Box mb={6}>
-          <Text>
-            <strong><Link href={`${githubUrl}/armins88/Dislection`} target="_blank">Dislection</Link></strong> - A lightweight firefox extension to convert all fonts in the DOM to one tailored for Dyslexic readers. Dislection is part of a larger effort to bring accessibility to the web. I plan to extend the extension to dynamically change text-based content on the web to fit a specific readers needs. There is more research that needs to be done into how we exactly quantify good reading and what properties of text and/or web-page we change in order to improve reading.
-          </Text>
-        </Box>
-      </Section>
+      <Box mb={6}>
+        <Text mb={2}>LND utilities I used when I was working on Lightning wallets.</Text>
+        <Text mb={4}>
+          <strong><Link href={`${githubUrl}/auto-provisioned-lnd`} target="_blank">Auto-Provisioning LND</Link></strong> - <em>June 2022</em> - Lnd node auto-provisioning docker set up for cloud environment.
+        </Text>
+        <Text>
+          <strong><Link href={`${githubUrl}/LND-config-generator`} target="_blank">LND Config Generator</Link></strong> - <em>Dec 2022</em> - LND has over 200+ config options. Everything ranging from btcd backend parameters to configuring your healthchecks. This generator is meant to expose and explain all of those options so that any user can make the most of the flexibility available to them. As well providing a variety of preset "node classes".
+        </Text>
+      </Box>
+      <Box mb={6}>
+        <Text>
+          <strong><Link href={`${githubUrl}/quest/tree/arm`} target="_blank">Quest2Arm</Link></strong> - A port of the real time x86 OS <Link href="http://www.questos.org/" target="_blank">quest</Link> to ARMv7. Submitted as a final project for CS522 Operating Systems.
+        </Text>
+      </Box>
+      <Box mb={6}>
+        <Text>
+          <strong><Link href="https://github.com/aqua-watch/Firmware" target="_blank">Aqua Watch</Link></strong> - Leaching of lead and other contaminants into tap water poses a significant health risk and is expensive to accurately and efficiently detect in real time. We have utilized commercially available low-cost water metric sensors to represent water samples in an n-dimensional space and leveraged classification models to detect lead contamination in tap water. Experimental results suggest that our novel methodology is an effective and cost efficient way to detect lead contamination. Furthermore, our data driven approach shows promise of being applied to other heavy metal contaminants and organic pollutants while still using the same hardware.
+        </Text>
+      </Box>
+      <Box mb={6}>
+        <Text>
+          <strong><Link href={`${githubUrl}/armins88/Dislection`} target="_blank">Dislection</Link></strong> - A lightweight firefox extension to convert all fonts in the DOM to one tailored for Dyslexic readers. Dislection is part of a larger effort to bring accessibility to the web. I plan to extend the extension to dynamically change text-based content on the web to fit a specific readers needs. There is more research that needs to be done into how we exactly quantify good reading and what properties of text and/or web-page we change in order to improve reading.
+        </Text>
+      </Box>
+    </Section>  */}
     </Layout >
   )
 }
